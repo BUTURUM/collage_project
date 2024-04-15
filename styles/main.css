@@ -1,0 +1,27 @@
+:root{
+    --kirby-color: #d74894;
+    --kirby-shadow: rgba(215, 72, 148, .25);
+    --passive-color: hsl(0, 0%, 95%);
+    --dark-color: hsl(0, 0%, 50%);
+}
+::selection{
+    background: var(--kirby-color);
+    color: white;
+}
+*{
+    font-family: 'Comfortaa';
+}
+h1, h2, h3, h4, h5, h6, body, p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    user-select: none;
+}
+section{
+    padding: 2rem;
+}
+.user-view{
+    max-width: 720px;
+    margin: auto;
+}

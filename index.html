@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/skill.css">
+    <link rel="stylesheet" href="./styles/submit.css">
+</head>
+<body>
+    <section id="face">
+        <div class="user-view profile">
+            <h1 class="profile__title">Hello, my name is</h1>
+            <div class="profile__picture">
+                <img src="./assets/images/kirby.png">
+            </div>
+            <div class="profile__refs">
+                <a href="https://twitter.com/KirbyInformer" class="profile__link">
+                    <img src="./assets/icons/twitter.svg">
+                </a>
+                <a href="https://www.youtube.com/watch?v=H3LAkr0ANgw" class="profile__link">
+                    <img src="./assets/icons/youtube.svg">
+                </a>
+                <a href="https://kirby.nintendo.com/" class="profile__link">
+                    <img src="./assets/icons/internet.svg">
+                </a>
+                <a href="https://wikirby.com/" class="profile__link">
+                    <img src="./assets/icons/wiki.svg">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 align="center">Please hire kirby</h1>
+        <p>Kirby knows a lot about different places, which makes him a great choice to hire. He can handle city challenges and rural ones equally well. Kirby can fit in anywhere and get along with anyone, so he's a reliable team player. With Kirby, you get someone who knows their stuff and can handle any situation.</p>
+        <div class="skill-grid">
+            <div class="skill">
+                <h2 class="skill__title">Animal care!</h2>
+                <div class="skill__preview">
+                    <video muted="muted" loop src="./assets/video/kirby-and-animal.mp4"></video>
+                </div>
+                <span class="skill__description">Kirby loves animals so much that he will throw them into boxes to give them shelter.</span>
+            </div>
+            <div class="skill">
+                <h2 class="skill__title">Shooting!</h2>
+                <div class="skill__preview">
+                    <video muted="muted" loop src="./assets/video/kirby-and-box.mp4"></video>
+                </div>
+                <span class="skill__description">Kirby has the ability to absorb heavy items in and shoot them out of its mouth. this could be helpful for things like heavy movement in a warehouse or for law enforcement.</span>
+            </div>
+            <div class="skill">
+                <h2 class="skill__title">Kirbymobile!</h2>
+                <div class="skill__preview">
+                    <video muted="muted" loop src="./assets/video/kirby-and-car.mp4"></video>
+                </div>
+                <span class="skill__description">Cant be bothered to drive your car? Kirby can suck it and drive for you. Like a personal uber!</span>
+            </div>
+            <div class="skill">
+                <h2 class="skill__title">Swordsmanship!</h2>
+                <div class="skill__preview">
+                    <video muted="muted" loop src="./assets/video/kirby-and-sword.mp4"></video>
+                </div>
+                <span class="skill__description">Kirby is a born fighter, adept with many weapons, his favourite of them a sword. If you ever need a bodyguard, you know who to call...</span>
+            </div>
+        </div>
+    </section>
+    <section id="hire">
+        <form class="user-view submit">
+            <legend class="submit__title">Do you want to hire kibry?</legend>
+            <p>
+                If you want to hire such valuable worker like kirby, fill the form and we will contact you
+            </p>
+            <div class="submit__animated-input">
+                <input placeholder="name" required/>
+            </div>
+            <div class="submit__animated-input">
+                <input placeholder="email" required/>
+            </div>
+            <div class="submit__bottom">
+                <button class="submit__button" type="submit">submit</button>
+            </div>
+        </form>
+    </section>
+    <script src="./script/play.js"></script>
+</body>
+</html>

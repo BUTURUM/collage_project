@@ -1,0 +1,65 @@
+.submit{
+    max-width: 720px;
+    margin: auto;
+    padding: 1rem;
+}
+.submit > *:not(:last-child){
+    margin-bottom: 1rem;
+}
+.submit__title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.submit__animated-input{
+    padding: 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    position: relative;
+
+    border-bottom: solid var(--dark-color) 1px;
+    transition: all .2s;
+    background-color: var(--passive-color);
+}
+.submit__animated-input::after{
+    content: '';
+
+    position: absolute;
+    height: 3px;
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    background-color: var(--kirby-color);
+
+    transition: all .4s;
+}
+.submit__animated-input:has(input:focus)::after{
+    left: 0;
+    right: 0;
+}
+.submit__animated-input > input{
+    all: unset;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+.submit__animated-input:has(input:focus){
+    background-color: var(--kirby-shadow);
+}
+
+.submit__bottom{
+    display: flex;
+    justify-content: center;
+}
+.submit__button{
+    all: unset;
+    cursor: pointer;
+    color: white;
+    background: var(--kirby-color);
+
+    min-width: 25%;
+    padding: .5rem;
+    border-radius: .25rem;
+    text-align: center;
+}

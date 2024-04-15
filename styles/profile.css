@@ -1,0 +1,61 @@
+#face{
+    background-image: url("../assets/images/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+}
+.profile > *:not(:last-child){
+    margin-bottom: 2rem;
+}
+.profile__title{
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 0;
+}
+.profile__picture{
+    text-align: center;
+}
+.profile__picture > img{
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.profile__refs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile__link{
+    all: unset;
+
+    position: relative;
+    top: 0;
+    cursor: pointer;
+
+    background: white;
+    padding: .4rem;
+    border-radius: 50%;
+    width: 2rem;
+    border: .3rem rgba(0, 0, 0, 0) solid;
+
+    transition: border .25s, top .25s;
+}
+.profile__link:hover{
+    border-color: var(--kirby-color);
+    top: -.5rem;
+}
+.profile__link > img{
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 720px){
+    .profile__link{
+        width: 2.5rem;
+    }
+}

@@ -1,0 +1,40 @@
+#about > *:not(:last-child){
+    margin-bottom: 2rem;
+}
+.skill{
+    padding: 1rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+.skill > :not(:last-child){
+    margin-bottom: 1rem;
+}
+.skill__title{
+    text-align: center;
+}
+.skill__description{
+    flex: auto;
+}
+.skill__preview{
+    text-align: center;
+}
+.skill__preview > video{
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 35vh;
+    border-radius: 25%;
+}
+
+@media (max-width: 720px){
+    .skill-grid > *:not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 720px){
+    .skill-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
